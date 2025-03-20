@@ -16,16 +16,16 @@ function logWhisper(string) {
 
 function sayHiToHeadphonedRoommate(string) {
     let reply;
-    switch (true) {
-        case string === string.toLowerCase():
+    switch (string) {
+        case string.toLowerCase():
             reply = "I can't hear you!";
             break;
 
-        case string === string.toUpperCase():
+        case string.toUpperCase():
             reply = "YES INDEED!"
             break;
 
-        case string === "Let's have dinner together!":
+        case "Let's have dinner together!":
             reply = "I would love to!";
             break;
     }
